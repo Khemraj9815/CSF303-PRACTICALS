@@ -50,7 +50,7 @@ int main() {
         }
     }
 
-    // 7. Display final vector
+    // 
     cout << "After removing below average:" << endl;
     for (int x : v2230286) {
         cout << x << endl;
