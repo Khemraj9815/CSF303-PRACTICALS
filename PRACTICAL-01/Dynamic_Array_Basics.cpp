@@ -15,16 +15,17 @@ int main() {
 
     cout << "Value at the index 1: " << new_vector[1] << endl;
     
-
+    int vector_size = new_vector.size();
     // loop through vector using using iteration
-    for (auto i = 0; i < new_vector.size(); i++){
+    for (auto i = 0; i < vector_size; i++){
+
         // print out all the element
         cout << new_vector[i] << endl;
     }
 
     int Min_Value = new_vector[0];
     int Max_Value = new_vector[0];
-    for (size_t i = 1; i < new_vector.size(); ++i) {
+    for (auto i = 1; i < new_vector.size(); ++i) {
         
             if (new_vector[i] < Max_Value) {
                 Min_Value = new_vector[i];

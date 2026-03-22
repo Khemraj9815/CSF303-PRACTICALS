@@ -1,15 +1,22 @@
 #include <iostream>
 #include <vector>
-#include <string>
+#include <algorithm> // for sort and unique
 using namespace std;
 
 int main() {
+    vector<int> vec = {1, 2, 2, 3, 4, 4, 5};
 
-    vector<int> new_vector = {1, 2, 3, 4, 5};
+    // 1. Sort the vector (required for unique to work)
+    sort(vec.begin(), vec.end());
 
-    // iterating the vector in reverse order
-    for (auto i = new_vector.rbegin(); i != new_vector.rend(); i++)
-        cout << *i << " ";
+    // 2. Use unique to move duplicates to the end
+    // 3. Use erase to remove the "garbage" elements from the vector
+    vec.erase(unique(vec.begin(), vec.end()), vec.end());
+
+    // Print the result
+    for (int x : vec) {
+        cout << x << endl;
+    }
+
     return 0;
 }
-
