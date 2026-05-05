@@ -7,7 +7,7 @@
 
 **Time Complexity:**: O(k)
 
-![alt text](/assets/1.png)
+![alt text](./assets/1.png)
 
 ## PATRICIA Trie
 
@@ -19,7 +19,7 @@ Splitting chunks to add word: If an edge holds "romanus" and you want to insert 
 
 **Time Complexity**:  O(k)
 
-![2 ](/assets/2.png)
+![2 ](./assets/2.png)
 
 
 ## Manachar's Algorithm
@@ -30,7 +30,7 @@ Splitting chunks to add word: If an edge holds "romanus" and you want to insert 
 
 **Time Complexity**:  O(n)
 
-![alt text](/assets/3.png)
+![alt text](./assets/3.png)
 
 
 **Reflection**
